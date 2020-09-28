@@ -1,0 +1,145 @@
+.build {
+    height:1300px;
+    width:100vw;
+    background-color:#021321;
+    float:left;
+}
+.build .top {
+    height:350px;
+    width:100vw;
+    margin-top:50px;
+    float:left;
+    color:white;
+    font-family: 'Roboto',sans-serif;
+    font-size:clamp(1.5rem,2.0vw,2.5rem);
+}
+.build .top h4 {
+    font-size:clamp(1.2rem,1.6vw,1.8rem);
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Oswald',sans-serif;
+}
+.build .ullist {
+    height:300px;
+    width:100vw;
+    float:left;
+}
+.build .ullist ul {
+    height:250px;
+    width:80%;
+    float:left;
+    list-style:none;
+    margin-left:10%;
+}
+.build .ullist ul li {
+    height:250px;
+    width:clamp(150px,25%,800px);
+    float:left;
+    margin-left:clamp(20px,10%,50px);
+}
+.build .ullist ul li span {
+    float:left;
+    width:100%;
+}
+.build .ullist ul li .center {
+    margin-top:20px;
+    color:#94A4B2;
+    float:left;
+}
+.build .form {
+    height:550px;
+    width:50%;
+    background-color:#BFCEDA;
+    float:left;
+    margin-left:25vw;
+    border-radius: 15px;
+}
+.build .form textarea {
+    resize: none;
+    height:80px;
+    width:clamp(200px,100%,1000px);
+    margin-top:10px;
+    box-shadow: 1px 1px 5px grey;
+    border:none;
+    border-radius: 5px;
+    padding-left:5px;
+}
+.build .form .formpad {
+    margin-left:50px;
+    float:left;
+    width:80%;
+    margin-top:15px;
+}
+.build .form .formpad h2 {
+    font-family: 'Roboto',sans-serif;
+    font-size:32px;
+}
+.build .form .formpad h4 {
+    font-family: 'Roboto',sans-serif;
+    font-size:18px;
+    line-height: 0px;
+    font-weight: 400;
+}
+.build .form .formpad form {
+    margin-top:50px;
+}
+.build .form .formpad form label {
+    font-family: 'Oswald',sans-serif;
+    font-size:20px;
+}
+.build .form .formpad form input {
+    height:35px;
+    width:clamp(200px,100%,1200px);
+    padding-left:5px;
+    border:none;
+    border-radius: 5px;
+    margin-top:10px;
+    box-shadow: 1px 1px 5px grey;
+    color:black;
+    font-family:'roboto',sans-serif;
+}
+.build .form .formpad form input::placeholder, .build .form .formpad form textarea::placeholder {
+    color:#8D9FB0;
+    font-family:'roboto',sans-serif;
+}
+.build .form .formpad form button {
+    height:40px;
+    width:200px;
+    background-color:#021321;
+    color:white;
+    margin-top:20px;
+    font-family:'Roboto',sans-serif;
+    border:none;
+    border-radius: 5px;
+    font-size:18px;
+}
+.build .form .formpad form button:hover{ 
+    cursor: pointer;
+}
+@media(max-width:768px) {
+    .build .ullist {
+        margin-left:-40px;
+    }
+    .build .form .formpad {
+        margin-left:20px;
+    }
+    .build .form .formpad h4 {
+        font-size:18px;
+    }
+}
+@media (min-width:300px) and (max-width:450px) {
+    .build {
+      width:175%;
+      height:2100px;
+    }
+    .build .top {
+        margin-left:150px;
+    }
+    .build .ullist ul li{
+        margin-left:200px;
+    }
+    .build .form {
+        margin-top:500px;
+        width:480px;
+    }
+  }

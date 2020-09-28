@@ -1,0 +1,94 @@
+
+.newbox {
+    height:1600px;
+    width:100%;
+    float:left;
+}
+.newbox .float-left {
+    height:600px;
+    width:clamp(250px,30%,600px);
+    margin-left:clamp(50px,10%,150px);
+    margin-top:50px;
+    border-radius: 15px;
+    float:left;
+    background-image: url("https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+    background-size: 130%;
+    background-position: center;
+}
+.newbox .float-left:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+.newbox .float-right {
+    height:500px;
+    width:clamp(250px,40%,650px);
+    margin-right:clamp(50px,10%,150px);
+    margin-top:50px;
+    border-radius: 15px;
+    float:right;
+    background-size: 130%;
+    background-position: center;
+}
+ .info2 {
+    height:auto;
+    width:80%;
+    padding-left:50px;
+    margin-top:80px;
+    float:left;
+}
+.info2 h2 {
+    font-family: 'Roboto',sans-serif;
+    color:#525D75;
+    font-size: clamp(1.2rem,2.0vw,2.4rem);
+}
+.info2 h4   {
+    font-family: 'oswald',sans-serif;
+    color:#788592;
+    font-weight: 400;
+    font-size: clamp(0.8rem,1.4vw,1.8rem);
+}
+.info2 ul li {
+    list-style: none;
+    height:35px;
+    width:clamp(200px,70%,350px);
+    font-family: 'Roboto',sans-serif;
+    font-size:clamp(0.6rem,1.2vw,1.4rem);
+    color:#788592;
+}
+.info2 ul li span {
+    float:left;
+}
+@media (max-width:768px) {
+    .newbox {
+        height:2000px;
+    }
+    .newbox .float-left {
+        width:80%;
+    }
+    .newbox .float-right {
+        width:80%;
+    }
+    .newbox .float-right .info2 h2{
+        font-size:32px;
+    }
+    .newbox .float-right .info2 h4{
+        font-size:26px;
+        font-weight: 400;
+    }
+    .newbox .float-right .info2 ul li {
+        font-size: 24px;
+        width:100%;
+    }
+    .newbox .profile h1 {
+        font-size:42px;
+    }
+    .newbox .profile h4 {
+        font-size:22px;
+    }
+}
+@media (min-width:300px) and (max-width:450px) {
+    .newbox {
+        height:2100px;
+      width:175%;
+    }
+  }
